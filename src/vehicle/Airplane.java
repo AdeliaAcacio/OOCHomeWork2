@@ -16,21 +16,37 @@ public class Airplane extends Vehicle implements Flyable {
         super(speed, numPassengers);
     }
     
-    // Override Methods
+    // Added Override Methods
     
-    @Override
-    public void setNumPassengers(int numPassengers) {
-        super.setNumPassengers(numPassengers); 
-    }
-
     @Override
     public int getNumWings() {
         return super.getNumWings(); 
     }
 
     @Override
+    public float getAltitude() {
+        return 0;
+        
+    }
+
+    @Override
     public void changeAltitude(float change) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.getAltitude();
+        this.setDirection(altitude);
+    }
+
+    @Override
+    public void turn(float angle) {
+        
+    }
+
+    @Override
+    public void accelerate(float speed) {
+    }
+    
+    @Override
+    public void brake() {
+        
     }
     
     

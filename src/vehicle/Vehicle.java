@@ -17,8 +17,8 @@ public abstract class Vehicle {
     private String make; //drive - air, sea, road 
     private String type; //Motocycle, Airplane, SailBoat
     
-    protected int numWheels = 2;
-    protected int numWings = 2;
+    protected int numWheels = 0;
+    protected int numWings = 0;
     protected int numSails = 3;
     
     private int numPassengers;

@@ -8,7 +8,7 @@ package vehicle;
  *
  * @author AdeliaAcacio
  */
-public class Motorcycle extends Vehicle{
+public class Motorcycle extends Vehicle implements Drivable{
     
     //Constructor
 
@@ -18,9 +18,23 @@ public class Motorcycle extends Vehicle{
     
     // Add Method from Vehicle
     
+     public int setNumWheels() {
+        return numWheels = 2;
+    }
+
     @Override
-    public int getNumWheels() {
-        return super.getNumWheels(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    public void accelerate(float speed) {
+        this.getSpeed();
+    }
+
+    @Override
+    public void brake() {
+        
+    }
+
+    @Override
+    public void turn(float angle) {
+        
     }
     
     

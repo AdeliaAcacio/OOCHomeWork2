@@ -22,36 +22,37 @@ public class SailBoat extends Vehicle implements Sailable{
         super(speed, make, type, numPassengers);
   */
         
-    //All abstract Metyhod implemented
+    //All abstract Method implemented
+    
+    
 
     @Override
     public float getDirection() {
         return super.getDirection();
-        // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+       
     }
 
     @Override
     public void hoistSail() {
-        throw new UnsupportedOperationException("Not supported yet.");
-        // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
     }
 
     @Override
     public void lowerSail() {
-        throw new UnsupportedOperationException("Not supported yet."); 
-        // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+      
     }
 
     @Override
     public boolean isSailHoisted() {
-        throw new UnsupportedOperationException("Not supported yet.");
-        // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return true;
+        
     }
+
+  
 
     @Override
     public void landHo() {
-        throw new UnsupportedOperationException("Not supported yet.");
-        // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
     }
     
   
