@@ -12,16 +12,12 @@ public interface Drivable{
     
     
     
-    //METHODS
+    //abstract METHODS
     
-    public void accelerate(float speed);//motorcycle, airplane, sailBoat
-    
-    public void brake();//motorcycle, airplane
-    
+    public void accelerate(float speed);
+    public void brake();
     public void turn(float angle);//sail boat
-    
     public float getDirection(); 
-    
     public float getSpeed();   
     public String getMake();    
     public String getType();

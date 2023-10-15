@@ -6,15 +6,23 @@ package vehicle;
 
 /**
  *
- * @author My PC
+ * @author AdeliaAcacio
  */
 public class SailBoat extends Vehicle implements Sailable{
+    
+    //Constructor
 
+    public SailBoat(float speed, int numPassengers) {
+        super(speed, numPassengers);
+    }
+    
+    
+/*
     public SailBoat(float speed, String make, String type, int numPassengers) {
         super(speed, make, type, numPassengers);
-  
+  */
         
-    }
+    //All abstract Metyhod implemented
 
     @Override
     public float getDirection() {

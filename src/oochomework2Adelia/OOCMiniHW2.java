@@ -4,6 +4,10 @@
  */
 package oochomework2Adelia;
 
+import vehicle.Motorcycle;
+import vehicle.SailBoat;
+import vehicle.Airplane;
+
 /**
  *
  * @author sweiss/AdeliaAcacio
@@ -14,16 +18,24 @@ public class OOCMiniHW2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-/*
+
         System.out.println("***Motorcycle***");
-        Motocycle moto = new Motocycle();
+        Motorcycle motocycle = new Motorcycle(80f,1);
+        motocycle.getNumWheels();
+        
 
         System.out.println("***Sail Boat***");
-        SailBoat boat = new SailBoat();
+        SailBoat sboat = new SailBoat(100f, 7);
+        sboat.getDirection();
+        sboat.getNumSails();
+        
 
         System.out.println("***Airplane***");
-        Airplane air = new SailBoat();
-*/
+        Airplane airplane = new Airplane(900f,215);
+        airplane.getNumWings() ;
+        airplane.getNumPassengers();
+        
+
     }
 
 }

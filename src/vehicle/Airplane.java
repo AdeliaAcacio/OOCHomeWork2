@@ -6,11 +6,35 @@ package vehicle;
 
 /**
  *
- * @author My PC
+ * @author AdeliaAcacio
  */
-public class Airplane extends Vehicle  {
+public class Airplane extends Vehicle implements Flyable {
+    
+    //Constructor
 
-    public Airplane() {
+    public Airplane(float speed, int numPassengers) {
+        super(speed, numPassengers);
     }
+    
+    // Override Methods
+    
+    @Override
+    public void setNumPassengers(int numPassengers) {
+        super.setNumPassengers(numPassengers); 
+    }
+
+    @Override
+    public int getNumWings() {
+        return super.getNumWings(); 
+    }
+
+    @Override
+    public void changeAltitude(float change) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    
+
+   
     
 }

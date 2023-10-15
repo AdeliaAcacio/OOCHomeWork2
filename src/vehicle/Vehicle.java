@@ -13,28 +13,44 @@ public abstract class Vehicle {
     //PROPRIETIES 
     
     private float speed;
-    private float direction = 0;
+    private float direction = 180f;
     private String make; //drive - air, sea, road 
     private String type; //Motocycle, Airplane, SailBoat
     
-    protected int numWheels = 0;
-    protected int numWings = 0;
-    protected int numSails = 0;
+    protected int numWheels = 2;
+    protected int numWings = 2;
+    protected int numSails = 3;
     
     private int numPassengers;
     
-    public Vehicle(){
-        System.out.println("Vehicle 1");
+    //CONSTRUCTORS 
+
+    public Vehicle(float speed, int numPassengers) {
+        this.speed = speed;
+        this.numPassengers = numPassengers;
     }
-    //CONSTRUCTORS (all class can use coz it is public)
+    
+    
+    
+    /*
+     public Vehicle(){
+        System.out.println("Vehicle 1");
+        
+    }
+    //CONSTRUCTORS 
     
     public Vehicle(float speed, String make, String type, int numPassengers) {
         this.speed = speed;
         this.make = make;
         this.type = type; 
         this.numPassengers = numPassengers;
-    }
+    }*/
 
+    
+    
+    
+     //METHODS - Getter and Setter
+    
     public float getSpeed() {
         return speed;
     }
