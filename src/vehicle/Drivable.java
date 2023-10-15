@@ -8,19 +8,26 @@ package vehicle;
  *
  * @author sweis/AdeliaAcacio
  */
-public interface Drivable {
+public interface Drivable{
+    
+    
     
     //METHODS
     
-    public void accelerate(float speed);
+    public void accelerate(float speed);//motorcycle, airplane, sailBoat
     
-    public void brake();
+    public void brake();//motorcycle, airplane
     
-    public void turn(float angle);
+    public void turn(float angle);//sail boat
     
     public float getDirection(); 
     
     public float getSpeed();   
     public String getMake();    
     public String getType();
+
 }
+
+
+    
+  

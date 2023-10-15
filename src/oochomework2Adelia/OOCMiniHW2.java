@@ -14,9 +14,16 @@ public class OOCMiniHW2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        
-        
+/*
+        System.out.println("***Motorcycle***");
+        Motocycle moto = new Motocycle();
+
+        System.out.println("***Sail Boat***");
+        SailBoat boat = new SailBoat();
+
+        System.out.println("***Airplane***");
+        Airplane air = new SailBoat();
+*/
     }
-    
+
 }

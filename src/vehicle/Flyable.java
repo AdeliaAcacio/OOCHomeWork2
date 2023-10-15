@@ -8,11 +8,11 @@ package vehicle;
  *
  * @author sweis/AdeliaAcacio
  */
-public interface Flyable extends Drivable {
+   public interface Flyable extends Drivable {
     
     //PROPRIETIES
     float altitude = 0 ;
-   
+    
     
     //METHODS
     
@@ -20,4 +20,8 @@ public interface Flyable extends Drivable {
     
     public float getAltitude();
     
+    
+    
 }
+
+  

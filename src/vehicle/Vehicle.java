@@ -14,8 +14,8 @@ public abstract class Vehicle {
     
     private float speed;
     private float direction = 0;
-    private String make;
-    private String type;
+    private String make; //drive - air, sea, road 
+    private String type; //Motocycle, Airplane, SailBoat
     
     protected int numWheels = 0;
     protected int numWings = 0;
@@ -24,20 +24,17 @@ public abstract class Vehicle {
     private int numPassengers;
     
     public Vehicle(){
-        System.out.println("");
+        System.out.println("Vehicle 1");
     }
-    //CONSTRUCTORS 
+    //CONSTRUCTORS (all class can use coz it is public)
     
     public Vehicle(float speed, String make, String type, int numPassengers) {
         this.speed = speed;
         this.make = make;
-        this.type = type;
+        this.type = type; 
         this.numPassengers = numPassengers;
     }
-    
 
-    //METHODS
-    
     public float getSpeed() {
         return speed;
     }
@@ -45,7 +42,6 @@ public abstract class Vehicle {
     public void setSpeed(float speed) {
         this.speed = speed;
     }
-    
 
     public float getDirection() {
         return direction;
@@ -54,7 +50,6 @@ public abstract class Vehicle {
     public void setDirection(float direction) {
         this.direction = direction;
     }
-    
 
     public String getMake() {
         return make;
@@ -63,7 +58,6 @@ public abstract class Vehicle {
     public void setMake(String make) {
         this.make = make;
     }
-    
 
     public String getType() {
         return type;
@@ -72,7 +66,6 @@ public abstract class Vehicle {
     public void setType(String type) {
         this.type = type;
     }
-    
 
     public int getNumWheels() {
         return numWheels;
@@ -105,7 +98,8 @@ public abstract class Vehicle {
     public void setNumPassengers(int numPassengers) {
         this.numPassengers = numPassengers;
     }
+
     
-    
+  
 }
 
